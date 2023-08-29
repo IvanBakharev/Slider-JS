@@ -51,6 +51,16 @@ dots.forEach((item, indexDot) => {
     })
 })
 
+const time = setInterval(() => {
+    if (index == slides.length - 1) {
+        index = 0;
+        prepareCurrentSlide(index);
+    } else {
+        index++;
+        prepareCurrentSlide(index);
+    }
+}, 2000);
+
 
 next.addEventListener('click', nextSlide);
 prev.addEventListener('click', prevSlide);
