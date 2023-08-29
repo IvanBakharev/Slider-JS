@@ -51,6 +51,8 @@ dots.forEach((item, indexDot) => {
     })
 })
 
+// Автоматическое переключение
+
 const time = setInterval(() => {
     if (index == slides.length - 1) {
         index = 0;
